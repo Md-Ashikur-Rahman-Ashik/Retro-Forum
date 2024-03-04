@@ -16,14 +16,13 @@ async function getPostData() {
     // let imageHtml = image.innerHTML;
     // console.log(imgUrl);
     // console.log(image.innerHTML);
-    // let active = data.posts[0].isActive;
+    let active = data.posts[0].isActive;
     // console.log(active);
-    
+
     image.innerHTML = `
         <div class="w-1/6">
           <img class="w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div class="rounded-full bg-[#10B981] border absolute w-[15px] h-[15px] left-[200px] top-[965px]"></div>
-          <div" class="hidden rounded-full bg-[#FF3434] border absolute w-[15px] h-[15px] left-[200px] top-[965px]"></div>
+          <div id="status" class="rounded-full border absolute w-[15px] h-[15px] left-[200px] top-[965px]"></div>
         </div>
         <div class="">
             <!-- Description -->
@@ -72,13 +71,15 @@ async function getPostData() {
             </div>
           </div>
     `;
-    // if (active === false) {
-    //   const act = document.getElementsByClassName("active");
-    //   act.classList.remove("hidden");
-    // }else{
-    //   const act = document.getElementsByClassName("active");
-    //   act.classList.add("hidden");
-    // }
+    if (active === false) {
+      const act = document.getElementById("status");
+      console.log(act);
+      act.classList.add("bg-[#FF3434]");
+    }else{
+      const act = document.getElementsById("status");
+      console.log(act);
+      act.classList.add("bg-[#10B981]")
+    }
   }
   getFirstElement();
 
@@ -88,14 +89,13 @@ async function getPostData() {
     // let imageHtml = image.innerHTML;
     // console.log(imgUrl);
     // console.log(image.innerHTML);
-    // let active = data.posts[1].isActive;
-    // console.log(active);
-    
+    let active = data.posts[1].isActive;
+    console.log(active);
+
     image.innerHTML = `
         <div class="w-1/6">
           <img class="w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div class="rounded-full hidden bg-[#10B981] border absolute w-[15px] h-[15px] left-[200px] top-[965px]"></div>
-          <div id="active" class="rounded-full bg-[#FF3434] border absolute w-[15px] h-[15px] left-[200px] top-[965px]"></div>
+          <div class="rounded-full active border absolute w-[15px] h-[15px] left-[200px] top-[965px]"></div>
         </div>
         <div class="">
             <!-- Description -->
@@ -144,11 +144,16 @@ async function getPostData() {
             </div>
           </div>
     `;
-    // if (active === false) {
-    //   const act = document.getElementById("active");
-    //   act.classList.remove("hidden");
-    //   // console.log(act.classList());
-    // }
+    if (active === false) {
+      const act = document.getElementsByClassName("active");
+      console.log(act[0].classList);
+      act.classList.add("bg-[#FF3434]");
+      // console.log(act.classList());
+    }
+    else{
+      const act = document.getElementsByClassName("active");
+      act.classList.add("bg-[#10B981]")
+    }
   }
   getSecondElement();
 }
