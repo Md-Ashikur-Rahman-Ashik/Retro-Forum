@@ -312,31 +312,36 @@
         </div>
       </section>
       <!-- Posts section -->
-      <section class="mx-10 lg:mx-32 flex">
-        <div>
-          <div id="firstElement" class="flex w-2/3 rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
+      <section class="mx-10 lg:mx-32 gap-16 flex">
+        <div class="w-2/3">
+          <div id="firstElement" class="flex w-full rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
           </div>
-          <div id="secondElement" class="flex w-2/3 rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
+          <div id="secondElement" class="flex w-full rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
           </div>
-          <div id="thirdElement" class="flex w-2/3 rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
+          <div id="thirdElement" class="flex w-full rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
           </div>
-          <div id="fourthElement" class="flex w-2/3 rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
+          <div id="fourthElement" class="flex w-full rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
           </div>
-          <div id="fifthElement" class="flex w-2/3 rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
+          <div id="fifthElement" class="flex w-full rounded-3xl border bg-[#797dfc1a] p-10 mb-10">
           </div>
-          <div id="sixthElement" class="flex w-2/3 rounded-3xl border bg-[#797dfc1a] p-10">
+          <div id="sixthElement" class="flex w-full rounded-3xl border bg-[#797dfc1a] p-10">
           </div>
         </div>
         <!-- Mark as read section -->
-        <div class="rounded-3xl border bg-[#12132d0d]">
+        <div class="rounded-3xl border w-1/3 bg-[#12132d0d]">
           <!-- Two area for title and others -->
-          <div class="flex">
+          <div class="flex justify-between p-4">
             <h5 class="font-mulish text-xl font-bold">Title</h5>
-            <p class="font-inter">Mark as read (<span>0</span>)</p>
+            <p class="font-inter">Mark as read (<span id="readCount">0</span>)</p>
           </div>
           <!-- Area for read articles -->
-          <div></div>
+          <div id="readArea" class="rounded-2xl mx-4 w-2/3 bg-white">
+          </div>
         </div>
+      </section>
+      <!-- Forum Section -->
+      <section class="mt-24 mx-32 p-20" style="background-image: url(images/joinforum.png); background-repeat: no-repeat; background-size: contain;">
+        <h3 class="font-mulish font-black text-4xl">Join Our Forum</h3>
       </section>
     </main>
     <footer></footer>
