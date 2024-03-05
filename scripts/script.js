@@ -670,7 +670,7 @@ async function getLatestPost() {
       />
     </g>
   </svg>
-  <p class="font-mulish text-[#12132d99] pb-3">${data[0].author.posted_date}</p>
+  <p class="font-mulish text-[#12132d99] pb-3">${data[0].author?.posted_date || "No Publish Date"}</p>
 </div>
 <p class="font-mulish text-[18px] font-extrabold pb-3">
   ${data[0].title}
@@ -682,7 +682,7 @@ async function getLatestPost() {
   <img src="${data[0].profile_image}" class="w-1/6 rounded-2xl">
   <div>
     <h5 class="font-mulish font-bold">${data[0].author.name}</h5>
-    <p class="font-mulish text-[14px] text-[#12132d99]">${data[0].author.designation}</p>
+    <p class="font-mulish text-[14px] text-[#12132d99]">${data[0].author?.designation  || "Unknown"}</p>
   </div>
 </div>
   `;
@@ -769,7 +769,7 @@ async function getLatestPost() {
       />
     </g>
   </svg>
-  <p class="font-mulish text-[#12132d99] pb-3">${data[1].author.posted_date}</p>
+  <p class="font-mulish text-[#12132d99] pb-3">${data[1].author?.posted_date || "No Publish Date"}</p>
 </div>
 <p class="font-mulish text-[18px] font-extrabold pb-3">
   ${data[1].title}
@@ -781,14 +781,13 @@ async function getLatestPost() {
   <img src="${data[1].profile_image}" class="w-1/6 rounded-2xl">
   <div>
     <h5 class="font-mulish font-bold">${data[1].author.name}</h5>
-    <p class="font-mulish text-[14px] text-[#12132d99]">${secondDesignation}</p>
+    <p class="font-mulish text-[14px] text-[#12132d99]">${data[1].author?.designation  || "Unknown"}</p>
   </div>
 </div>
   `;
 
   // Third post data from API
   const thirdPost = document.getElementById("thirdPost");
-  const designation = data[2].author.designation;
 
   thirdPost.innerHTML = `
   <figure class="pb-6">
@@ -870,7 +869,7 @@ async function getLatestPost() {
       />
     </g>
   </svg>
-  <p class="font-mulish text-[#12132d99] pb-3">${data[2].author.posted_date}</p>
+  <p class="font-mulish text-[#12132d99] pb-3">${data[2].author?.posted_date || "No Publish Date"}</p>
 </div>
 <p class="font-mulish text-[18px] font-extrabold pb-3">
   ${data[2].title}
@@ -882,7 +881,7 @@ async function getLatestPost() {
   <img src="${data[2].profile_image}" class="w-1/6 rounded-2xl">
   <div>
     <h5 class="font-mulish font-bold">${data[2].author.name}</h5>
-    <p class="font-mulish text-[14px] text-[#12132d99]">${designation}</p>
+    <p class="font-mulish text-[14px] text-[#12132d99]">${data[2].author?.designation  || "Unknown"}</p>
   </div>
 </div>
   `;
