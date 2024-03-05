@@ -788,6 +788,8 @@ async function getLatestPost() {
 
   // Third post data from API
   const thirdPost = document.getElementById("thirdPost");
+  const designation = data[2].author.designation;
+  
   thirdPost.innerHTML = `
   <figure class="pb-6">
   <img
@@ -880,10 +882,13 @@ async function getLatestPost() {
   <img src="${data[2].profile_image}" class="w-1/6 rounded-2xl">
   <div>
     <h5 class="font-mulish font-bold">${data[2].author.name}</h5>
-    <p class="font-mulish text-[14px] text-[#12132d99]">${data[2].author.designation}</p>
+    <p class="font-mulish text-[14px] text-[#12132d99]">${designation}</p>
   </div>
 </div>
   `;
+  if(designation !== "string"){
+    return designation.innerText = "unknown";
+  }
 }
 
 getLatestPost();
