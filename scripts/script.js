@@ -58,7 +58,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[0].view_count}</p>
               </div>
-              <div class="flex gap-4 items-center">
+              <div class="flex gap-2 lg:gap-4 items-center">
               <svg width="22.500000" height="22.500000" viewBox="0 0 22.5 22.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -68,7 +68,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[0].posted_time} min</p>
               </div>
-              <div class="pl-36 readButton">
+              <div class="pl-10 lg:pl-36 readButton">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -146,7 +146,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[1].view_count}</p>
               </div>
-              <div class="flex gap-4 items-center">
+              <div class="flex gap-2 lg:gap-4 items-center">
               <svg width="22.500000" height="22.500000" viewBox="0 0 22.5 22.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -156,7 +156,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[1].posted_time} min</p>
               </div>
-              <div class="pl-36 readButton">
+              <div class="pl-10 lg:pl-36 readButton">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -244,7 +244,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[2].posted_time} min</p>
               </div>
-              <div class="pl-36 readButton">
+              <div class="pl-10 lg:pl-36 readButton">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -323,7 +323,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[3].view_count}</p>
               </div>
-              <div class="flex gap-4 items-center">
+              <div class="flex gap-2 lg:gap-4 items-center">
               <svg width="22.500000" height="22.500000" viewBox="0 0 22.5 22.5" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -333,7 +333,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[3].posted_time} min</p>
               </div>
-              <div class="pl-36 readButton">
+              <div class="pl-10 lg:pl-36 readButton">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -423,7 +423,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[4].posted_time} min</p>
               </div>
-              <div class="pl-36 readButton">
+              <div class="pl-10 lg:pl-36 readButton">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
