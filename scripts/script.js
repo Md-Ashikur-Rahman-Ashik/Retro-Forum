@@ -545,17 +545,39 @@ async function getPostData() {
   }
   getSixthElement();
 
+  // Making search bar functional
+  function findCategory() {
+    const search = document.getElementById("searchBar");
+    const clickSearch = document.getElementById("searchButton");
+    clickSearch.addEventListener("click", function () {
+      const value = search.value.toLowerCase();
+      // console.log(value);
+      desiredCategory(value);
+    });
+  }
+
+  findCategory();
+
+  function desiredCategory(categoryName) {
+    if (categoryName === "comedy") {
+      const fourthCall = document.getElementById("fourthElement");
+      fourthCall.classList.add("hidden");
+      const statusFourth = document.getElementById("fourthStatus");
+      statusFourth.classList.add("hidden");
+    }
+  }
+
   // A function for adding article to the read list
   function readList() {
     const getButton = document.getElementsByClassName("readButton");
     let click = 0;
-      let count = document.getElementById("readCount");
+    let count = document.getElementById("readCount");
     // console.log(getButton);
     for (let our of getButton) {
       const desiredText =
         our.parentNode.parentNode.childNodes[7].childNodes[1].innerText;
       const viewCount = our.parentNode.childNodes[3].childNodes[3].innerText;
-      
+
       our.addEventListener("click", function () {
         click++;
         count.innerText = click;
