@@ -22,7 +22,7 @@ async function getPostData() {
     image.innerHTML = `
         <div class="w-1/6">
           <img class="w-3/4 lg:w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div id="status" class="rounded-full border absolute w-[15px] h-[15px] lg:left-[212px] lg:top-[965px] left-[110px] top-[1140px]"></div>
+          <div id="status" class="rounded-full border absolute w-[15px] h-[15px] lg:left-[212px] lg:top-[970px] left-[110px] top-[1140px]"></div>
         </div>
         <div class="">
             <!-- Description -->
@@ -110,7 +110,7 @@ async function getPostData() {
     image.innerHTML = `
         <div class="w-1/6">
           <img class="w-3/4 lg:w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div id="secondStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[212px] lg:top-[1240px] left-[110px] top-[1470px]"></div>
+          <div id="secondStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[212px] lg:top-[1250px] left-[110px] top-[1470px]"></div>
         </div>
         <div class="">
             <!-- Description -->
@@ -198,7 +198,7 @@ async function getPostData() {
     image.innerHTML = `
         <div class="w-1/6">
           <img class="w-3/4 lg:w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div id="thirdStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[210px] lg:top-[1515px] left-[102px] top-[1770px]"></div>
+          <div id="thirdStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[205px] lg:top-[1530px] left-[102px] top-[1770px]"></div>
         </div>
         <div class="">
             <!-- Description -->
@@ -287,7 +287,7 @@ async function getPostData() {
     image.innerHTML = `
         <div class="w-1/6">
           <img class="w-3/4 lg:w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div id="fourthStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[210px] lg:top-[1815px] left-[105px] top-[2100px]"></div>
+          <div id="fourthStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[210px] lg:top-[1830px] left-[105px] top-[2100px]"></div>
         </div>
         <div class="">
             <!-- Description -->
@@ -377,7 +377,7 @@ async function getPostData() {
     element.innerHTML = `
         <div class="w-1/6">
           <img class="w-3/4 lg:w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div id="fifthStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[210px] lg:top-[2090px] left-[103px] top-[2430px]"></div>
+          <div id="fifthStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[205px] lg:top-[2130px] left-[103px] top-[2430px]"></div>
         </div>
         <div class="">
             <!-- Description -->
@@ -467,7 +467,7 @@ async function getPostData() {
     element.innerHTML = `
         <div class="w-1/6">
           <img class="w-3/4 lg:w-1/2 relative rounded-2xl" src="${imgUrl}">
-          <div id="sixthStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[210px] lg:top-[2385px] left-[103px] top-[2760px]"></div>
+          <div id="sixthStatus" class="rounded-full active border absolute w-[15px] h-[15px] lg:left-[210px] lg:top-[2430px] left-[103px] top-[2760px]"></div>
         </div>
         <div class="">
             <!-- Description -->
