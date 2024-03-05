@@ -513,7 +513,7 @@ async function getPostData() {
             </svg>
             <p>${data.posts[5].posted_time} min</p>
               </div>
-              <div class="pl-36 readButton">
+              <div class="pl-10 lg:pl-36 readButton">
               <svg width="28.000000" height="28.000000" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
               <desc>
                   Created with Pixso.
@@ -596,7 +596,7 @@ async function getLatestPost() {
     src=${data[0].cover_image}
   />
 </figure>
-<div class="flex gap-2">
+<div class="flex gap-2 w-1/2 lg:w-full mx-auto lg:mx-0">
   <svg
     width="24.000000"
     height="24.000000"
@@ -678,7 +678,7 @@ async function getLatestPost() {
 <p class="font-mulish text-[#12132d99] pb-4">
  ${data[0].description}
 </p>
-<div class="flex gap-4">
+<div class="flex gap-2 w-2/3 lg:w-full lg:gap-4 lg:mx-0 mx-auto">
   <img src="${data[0].profile_image}" class="w-1/6 rounded-2xl">
   <div>
     <h5 class="font-mulish font-bold">${data[0].author.name}</h5>
@@ -695,7 +695,7 @@ async function getLatestPost() {
     src=${data[1].cover_image}
   />
 </figure>
-<div class="flex gap-2">
+<div class="flex gap-2 lg:w-full w-1/2 lg:mx-0 mx-auto">
   <svg
     width="24.000000"
     height="24.000000"
@@ -777,7 +777,7 @@ async function getLatestPost() {
 <p class="font-mulish text-[#12132d99] pb-4">
  ${data[1].description}
 </p>
-<div class="flex gap-4">
+<div class="flex gap-2 w-2/3 lg:w-full lg:gap-4 lg:mx-0 mx-auto">
   <img src="${data[1].profile_image}" class="w-1/6 rounded-2xl">
   <div>
     <h5 class="font-mulish font-bold">${data[1].author.name}</h5>
@@ -794,7 +794,7 @@ async function getLatestPost() {
     src=${data[2].cover_image}
   />
 </figure>
-<div class="flex gap-2">
+<div class="flex gap-2 lg:w-full w-1/2 lg:mx-0 mx-auto">
   <svg
     width="24.000000"
     height="24.000000"
@@ -876,7 +876,7 @@ async function getLatestPost() {
 <p class="font-mulish text-[#12132d99] pb-4">
  ${data[2].description}
 </p>
-<div class="flex gap-4">
+<div class="flex gap-2 w-2/3 lg:w-full lg:gap-4 lg:mx-0 mx-auto">
   <img src="${data[2].profile_image}" class="w-1/6 rounded-2xl">
   <div>
     <h5 class="font-mulish font-bold">${data[2].author.name}</h5>
