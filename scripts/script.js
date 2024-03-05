@@ -580,3 +580,14 @@ async function getPostData() {
 }
 
 getPostData();
+
+async function getLatestPost() {
+  const res = await fetch("https://openapi.programming-hero.com/api/retro-forum/latest-posts");
+  const data = await res.json();
+  // console.log(data);
+
+  // First post data from API
+  
+}
+
+getLatestPost();
