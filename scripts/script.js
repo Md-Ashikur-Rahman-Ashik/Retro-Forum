@@ -4,6 +4,7 @@ async function getPostData() {
   const res = await fetch(
     "https://openapi.programming-hero.com/api/retro-forum/posts"
   );
+
   const data = await res.json();
   // console.log(data);
   // console.log(data.posts[0].image);
@@ -547,6 +548,11 @@ async function getPostData() {
 
   // Making search bar functional
   function findCategory() {
+    function spinner() {
+      const spinner = document.getElementById("spinner");
+      spinner.classList.remove("invisible");
+    }
+    setInterval(spinner, 2000);
     const search = document.getElementById("searchBar");
     const clickSearch = document.getElementById("searchButton");
     clickSearch.addEventListener("click", function () {
@@ -568,7 +574,7 @@ async function getPostData() {
       statusThird.classList.add("hidden");
       const statusSixth = document.getElementById("sixthStatus");
       statusSixth.classList.add("hidden");
-      const statusFifth = document.getElementById("fifthStatus")
+      const statusFifth = document.getElementById("fifthStatus");
       statusFifth.classList.add("hidden");
       const statusFourth = document.getElementById("fourthStatus");
       statusFourth.classList.add("hidden");
@@ -578,7 +584,7 @@ async function getPostData() {
       sixthCall.classList.add("hidden");
       const fourthCall = document.getElementById("fourthElement");
       fourthCall.classList.add("hidden");
-    }else if(categoryName === "coding"){
+    } else if (categoryName === "coding") {
       const statusFirst = document.getElementById("status");
       statusFirst.classList.add("hidden");
       const statusSecond = document.getElementById("secondStatus");
@@ -587,7 +593,7 @@ async function getPostData() {
       statusThird.classList.add("hidden");
       const statusSixth = document.getElementById("sixthStatus");
       statusSixth.classList.add("hidden");
-      const statusFifth = document.getElementById("fifthStatus")
+      const statusFifth = document.getElementById("fifthStatus");
       statusFifth.classList.add("hidden");
       const statusFourth = document.getElementById("fourthStatus");
       statusFourth.classList.add("hidden");
@@ -599,8 +605,7 @@ async function getPostData() {
       thirdCall.classList.add("hidden");
       const sixthCall = document.getElementById("sixthElement");
       sixthCall.classList.add("hidden");
-    }
-    else if(categoryName === "music"){
+    } else if (categoryName === "music") {
       const statusFirst = document.getElementById("status");
       statusFirst.classList.add("hidden");
       const statusSecond = document.getElementById("secondStatus");
@@ -609,7 +614,7 @@ async function getPostData() {
       statusThird.classList.add("hidden");
       const statusSixth = document.getElementById("sixthStatus");
       statusSixth.classList.add("hidden");
-      const statusFifth = document.getElementById("fifthStatus")
+      const statusFifth = document.getElementById("fifthStatus");
       statusFifth.classList.add("hidden");
       const statusFourth = document.getElementById("fourthStatus");
       statusFourth.classList.add("hidden");
