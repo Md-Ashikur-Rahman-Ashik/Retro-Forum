@@ -550,18 +550,24 @@ async function getPostData() {
   function findCategory() {
     let search = document.getElementById("searchBar");
     search.addEventListener("click", () => {
+      function spinner() {
         const spinner = document.getElementById("spinner");
         spinner.classList.remove("invisible");
-      const clickSearch = document.getElementById("searchButton");
-    clickSearch.addEventListener("click", function () {
+      }
+      let myTimeOut = setTimeout(spinner, 0);
+      function stopSpinner(){
+        const spinner = document.getElementById("spinner");
+        spinner.classList.add("invisible");
+      }
+      let stopTimer = setTimeout(stopSpinner, 2000);
       
-      const value = search.value.toLowerCase();
-      // console.log(value);
-      desiredCategory(value);
-      spinner.classList.add("invisible");
+      const clickSearch = document.getElementById("searchButton");
+      clickSearch.addEventListener("click", function () {
+        const value = search.value.toLowerCase();
+        // console.log(value);
+        desiredCategory(value);
+      });
     });
-    })
-    
   }
 
   findCategory();
