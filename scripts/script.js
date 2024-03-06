@@ -548,18 +548,20 @@ async function getPostData() {
 
   // Making search bar functional
   function findCategory() {
-    function spinner() {
-      const spinner = document.getElementById("spinner");
-      spinner.classList.remove("invisible");
-    }
-    setInterval(spinner, 2000);
-    const search = document.getElementById("searchBar");
-    const clickSearch = document.getElementById("searchButton");
+    let search = document.getElementById("searchBar");
+    search.addEventListener("click", () => {
+        const spinner = document.getElementById("spinner");
+        spinner.classList.remove("invisible");
+      const clickSearch = document.getElementById("searchButton");
     clickSearch.addEventListener("click", function () {
+      
       const value = search.value.toLowerCase();
       // console.log(value);
       desiredCategory(value);
+      spinner.classList.add("invisible");
     });
+    })
+    
   }
 
   findCategory();
