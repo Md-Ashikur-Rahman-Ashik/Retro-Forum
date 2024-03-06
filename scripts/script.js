@@ -563,7 +563,7 @@ async function getPostData() {
       
       const clickSearch = document.getElementById("searchButton");
       clickSearch.addEventListener("click", function () {
-        const value = search.value.toLowerCase();
+        let value = search.value.toLowerCase();
         // console.log(value);
         desiredCategory(value);
       });
