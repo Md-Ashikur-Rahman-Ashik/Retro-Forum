@@ -560,10 +560,69 @@ async function getPostData() {
 
   function desiredCategory(categoryName) {
     if (categoryName === "comedy") {
-      const fourthCall = document.getElementById("fourthElement");
-      fourthCall.classList.add("hidden");
+      const statusFirst = document.getElementById("status");
+      statusFirst.classList.add("hidden");
+      const statusSecond = document.getElementById("secondStatus");
+      statusSecond.classList.add("hidden");
+      const statusThird = document.getElementById("thirdStatus");
+      statusThird.classList.add("hidden");
+      const statusSixth = document.getElementById("sixthStatus");
+      statusSixth.classList.add("hidden");
+      const statusFifth = document.getElementById("fifthStatus")
+      statusFifth.classList.add("hidden");
       const statusFourth = document.getElementById("fourthStatus");
       statusFourth.classList.add("hidden");
+      const fifthCall = document.getElementById("fifthElement");
+      fifthCall.classList.add("hidden");
+      const sixthCall = document.getElementById("sixthElement");
+      sixthCall.classList.add("hidden");
+      const fourthCall = document.getElementById("fourthElement");
+      fourthCall.classList.add("hidden");
+    }else if(categoryName === "coding"){
+      const statusFirst = document.getElementById("status");
+      statusFirst.classList.add("hidden");
+      const statusSecond = document.getElementById("secondStatus");
+      statusSecond.classList.add("hidden");
+      const statusThird = document.getElementById("thirdStatus");
+      statusThird.classList.add("hidden");
+      const statusSixth = document.getElementById("sixthStatus");
+      statusSixth.classList.add("hidden");
+      const statusFifth = document.getElementById("fifthStatus")
+      statusFifth.classList.add("hidden");
+      const statusFourth = document.getElementById("fourthStatus");
+      statusFourth.classList.add("hidden");
+      const firstCall = document.getElementById("firstElement");
+      firstCall.classList.add("hidden");
+      const secondCall = document.getElementById("secondElement");
+      secondCall.classList.add("hidden");
+      const thirdCall = document.getElementById("thirdElement");
+      thirdCall.classList.add("hidden");
+      const sixthCall = document.getElementById("sixthElement");
+      sixthCall.classList.add("hidden");
+    }
+    else if(categoryName === "music"){
+      const statusFirst = document.getElementById("status");
+      statusFirst.classList.add("hidden");
+      const statusSecond = document.getElementById("secondStatus");
+      statusSecond.classList.add("hidden");
+      const statusThird = document.getElementById("thirdStatus");
+      statusThird.classList.add("hidden");
+      const statusSixth = document.getElementById("sixthStatus");
+      statusSixth.classList.add("hidden");
+      const statusFifth = document.getElementById("fifthStatus")
+      statusFifth.classList.add("hidden");
+      const statusFourth = document.getElementById("fourthStatus");
+      statusFourth.classList.add("hidden");
+      const firstCall = document.getElementById("firstElement");
+      firstCall.classList.add("hidden");
+      const secondCall = document.getElementById("secondElement");
+      secondCall.classList.add("hidden");
+      const thirdCall = document.getElementById("thirdElement");
+      thirdCall.classList.add("hidden");
+      const fourthCall = document.getElementById("fourthElement");
+      fourthCall.classList.add("hidden");
+      const fifthCall = document.getElementById("fifthElement");
+      fifthCall.classList.add("hidden");
     }
   }
 
